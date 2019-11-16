@@ -1,0 +1,19 @@
+LD_FILE = boards/samd21x18-bootloader-external-flash-crystalless.ld
+USB_VID = 0x239A
+USB_PID = 0x8058
+USB_PRODUCT = "Helvetibadge"
+USB_MANUFACTURER = "rglenn"
+
+CHIP_VARIANT = SAMD21E18A
+CHIP_FAMILY = samd21
+
+SPI_FLASH_FILESYSTEM = 1
+EXTERNAL_FLASH_DEVICE_COUNT = 1
+EXTERNAL_FLASH_DEVICES = GD25Q32C
+LONGINT_IMPL = NONE
+
+CIRCUITPY_FREQUENCYIO = 0
+CIRCUITPY_GAMEPAD = 0
+CIRCUITPY_DISPLAYIO = 0
+# Include these Python libraries in firmware.
+FROZEN_MPY_DIRS += $(TOP)/frozen/Adafruit_CircuitPython_BusDevice
